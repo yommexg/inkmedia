@@ -41,12 +41,19 @@ const Navbar: React.FC = () => {
       <div onClick={toggleMenu} className="md:hidden cursor-pointer px-2">
         <FaBars size={22} />
       </div>
+
       <motion.nav
         initial={isMenuOpen ? menuSlideIn : menuSlideOut}
         animate={isMenuOpen ? menuSlideIn : menuSlideOut}
         variants={{ open: menuSlideIn, closed: menuSlideOut }}
         className={`fixed bg-yellow-100 font-bold top-0 z-50 right-0 px-8 py-14  md:hidden flex flex-col gap-10`}
       >
+        <p
+          onClick={toggleMenu}
+          className="cursor-pointer absolute top-0 right-0 text-3xl bg-white rounded-full px-2 pb-1"
+        >
+          x
+        </p>
         <Link
           to="/"
           onClick={toggleMenu}
