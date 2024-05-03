@@ -1,14 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Sidebar from "../Sidebar";
+import { FaPhone } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const logoImg = new URL("../../assets/logo/inksLogo.png", import.meta.url).href;
 const logoName = new URL("../../assets/logo/inksname.png", import.meta.url)
   .href;
 
 const Navbar: React.FC = () => {
+  const location = useLocation();
+
   return (
     <header
-      className={`bg-[#FFD700] shadow-lg fixed top-0 left-0 right-0 py-4 md:px-8 px-4 flex justify-between items-center overflow-hidden`}
+      className={`bg-[#FFD700] shadow-lg fixed top-0 left-0 right-0 py-4 md:px-8 px-4 flex justify-between items-center md:flex-wrap overflow-hidden md:gap-4 lg:px-10`}
     >
       <div className="md:flex md:items-center gap-5">
         <img src={logoImg} alt="Logo" className="h-9 w-9" />
@@ -20,7 +24,7 @@ const Navbar: React.FC = () => {
       <Sidebar />
 
       {/* Desktop View */}
-      <div className="hidden md:flex md:gap-10">
+      <div className="hidden md:flex md:gap-10 ">
         <Link
           to="/"
           className={
@@ -81,9 +85,23 @@ const Navbar: React.FC = () => {
         >
           Contact
         </Link>
-        <div className="border-r-2 border-black"></div>
 
-        <div className="hidden lg:block">Email</div>
+        <div className="hidden lg:flex gap-5">
+          <div className="border-r border-gray-200 hidden lg:block"></div>
+          <div className="flex items-center gap-3">
+            <AiOutlineMail color="orange" size={23} />
+            <a href="mailto:hydrokidb@gmail.com" className="font-bold">
+              hydrokidb@gmail.com
+            </a>
+          </div>
+          <div className="border-r border-gray-200 hidden lg:block"></div>
+          <div className="flex items-center gap-2">
+            <FaPhone color="red" />
+            <a href="tel:+2348153192058" className="font-bold">
+              +2348153192058
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );
