@@ -29,20 +29,18 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`bg-[#FFD700] shadow-lg fixed top-0 left-0 right-0 py-4 md:px-5 px-2 flex justify-between items-center overflow-hidden`}
+      className={`bg-[#FFD700] shadow-lg fixed top-0 left-0 right-0 py-4 md:px-8 px-4 flex justify-between items-center overflow-hidden`}
     >
       <div className="md:flex md:items-center gap-5">
-        <img src={logoImg} alt="Logo" className="md:w-12 md:h-12 h-9 w-9" />
-        <img src={logoName} alt="sLogo" className="w-60 hidden md:block" />
+        <img src={logoImg} alt="Logo" className="h-9 w-9" />
+        <img src={logoName} alt="sLogo" className="w-48 hidden md:block" />
       </div>
       <img src={logoName} alt="Logo" className="w-40 md:hidden" />
 
       {/* Mobile View */}
-      <FaBars
-        className="md:hidden cursor-pointer"
-        size={22}
-        onClick={toggleMenu}
-      />
+      <div onClick={toggleMenu} className="md:hidden cursor-pointer px-2">
+        <FaBars size={22} />
+      </div>
       <motion.nav
         initial={isMenuOpen ? menuSlideIn : menuSlideOut}
         animate={isMenuOpen ? menuSlideIn : menuSlideOut}

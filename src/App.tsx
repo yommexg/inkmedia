@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="mt-20">
+      <div className="mt-16">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
