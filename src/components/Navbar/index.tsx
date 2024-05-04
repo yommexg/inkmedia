@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`bg-[#FFD700] shadow-lg fixed top-0 left-0 right-0 py-4 md:px-8 px-4 flex justify-between items-center md:flex-wrap overflow-hidden md:gap-4 lg:px-10`}
+      className={`bg-[#FFD700] shadow-lg fixed top-0 left-0 right-0 py-4 md:px-8 px-4 flex justify-between items-center md:flex-wrap overflow-hidden md:gap-4 lg:px-10 z-50`}
     >
       <div className="md:flex md:items-center gap-5">
         <img src={logoImg} alt="Logo" className="h-9 w-9" />
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-2">
             <FaPhone color="red" />
             <a href="tel:+2348153192058" className="font-bold">
-              +2348153192058
+              +2349035065950
             </a>
           </div>
         </div>

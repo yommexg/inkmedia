@@ -26,9 +26,15 @@ const Sidebar: React.FC = () => {
 
   return (
     <>
-      <div onClick={toggleMenu} className="md:hidden cursor-pointer px-2">
+      <div onClick={toggleMenu} className="md:hidden z-50 cursor-pointer px-2">
         <FaBars size={22} />
       </div>
+      {isMenuOpen && (
+        <div
+          className="fixed top-0 left-0 md:hidden w-full h-full bg-black opacity-90 z-50"
+          onClick={toggleMenu}
+        ></div>
+      )}
 
       <motion.nav
         initial={isMenuOpen ? menuSlideIn : menuSlideOut}
