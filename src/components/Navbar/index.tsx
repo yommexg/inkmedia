@@ -90,8 +90,8 @@ const Navbar: React.FC = () => {
           <div className="border-r border-gray-200 hidden lg:block"></div>
           <div className="flex items-center gap-3">
             <AiOutlineMail color="orange" size={23} />
-            <a href="mailto:hydrokidb@gmail.com" className="font-bold">
-              hydrokidb@gmail.com
+            <a href="mailto:Info@thecopywritinghub.com" className="font-bold">
+              Info@thecopywritinghub.com
             </a>
           </div>
           <div className="border-r border-gray-200 hidden lg:block"></div>

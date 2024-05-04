@@ -11,7 +11,7 @@ const Banner1: React.FC = () => {
 
   return (
     <div
-      className="relatives h-[650px] lg:h-[800px] bg-cover"
+      className="relatives bg-cover"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="absolute inset-0 bg-black opacity-70 flex items-center justify-center lg:px-20">
@@ -28,15 +28,15 @@ const Banner1: React.FC = () => {
           <div className="flex flex-col gap-5 md:flex-row md:gap-10">
             <button
               onClick={() => navigate("/services")}
-              className="flex  items-center gap-4 bg-red-700 rounded-md p-4 text-lg font-serif font-bold text-whit cursor-pointer z-10 text-white"
+              className="flex justify-center items-center gap-4 bg-red-700 rounded-md p-4 font-serif font-bold text-whit cursor-pointer z-10 text-white"
               type="button"
             >
               <FaServicestack />
               The services we offer in marketing.
             </button>
             <button
-              onClick={() => navigate("/services")}
-              className="flex items-center justify-center gap-4 bg-white rounded-md p-4 text-lg font-serif font-bold text-whit cursor-pointer z-10 text-black"
+              onClick={() => navigate("/contact")}
+              className="flex items-center justify-center gap-4 bg-white rounded-md p-4 text-lg font-serif font-bold cursor-pointer z-10 text-black"
               type="button"
             >
               <FaMessage color="orange" />
