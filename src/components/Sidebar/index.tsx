@@ -30,17 +30,14 @@ const Sidebar: React.FC = () => {
         <FaBars size={22} />
       </div>
       {isMenuOpen && (
-        <div
-          className="fixed top-0 left-0 md:hidden w-full h-full bg-black opacity-90 z-50"
-          onClick={toggleMenu}
-        ></div>
+        <div className="fixed top-0 left-0 md:hidden w-full h-full bg-black opacity-90 z-50"></div>
       )}
 
       <motion.nav
         initial={isMenuOpen ? menuSlideIn : menuSlideOut}
         animate={isMenuOpen ? menuSlideIn : menuSlideOut}
         variants={{ open: menuSlideIn, closed: menuSlideOut }}
-        className={`fixed bg-yellow-100 font-bold top-0 z-50 right-0 px-8 py-14  md:hidden flex flex-col gap-10`}
+        className={`fixed bg-yellow-100 font-bold top-0 z-50 right-0 px-8 py-14  md:hidden flex flex-col gap-10 rounded-lg`}
       >
         <p
           onClick={toggleMenu}

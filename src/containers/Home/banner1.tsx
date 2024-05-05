@@ -14,7 +14,7 @@ const Banner1: React.FC = () => {
       className="relatives bg-cover h-[700px] py-10"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
-      <div className="absolute inset-0 bg-black opacity-70 flex items-center justify-center lg:px-20 h-[760px]">
+      <div className="absolute inset-0 bg-black opacity-70 flex items-center justify-center lg:px-20 h-[763px]">
         <div className="flex flex-col items-center gap-10 justify-center px-2">
           <h2 className="text-white font-mono font-bold text-3xl md:text-5xl text-center">
             Ibadan's Leading Results-Oriented Digital Marketing Agency
