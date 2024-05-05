@@ -28,11 +28,11 @@ const Banner1: React.FC = () => {
           <div className="flex flex-col gap-5 md:flex-row md:gap-10">
             <button
               onClick={() => navigate("/services")}
-              className="flex items-center gap-4 bg-red-700 rounded-md p-4 font-serif font-bold cursor-pointer z-10 text-white"
+              className="flex items-center gap-2 bg-red-700 rounded-md p-4 font-serif font-bold cursor-pointer z-10 text-white"
               type="button"
             >
               <FaServicestack />
-              The services we offer in marketing.
+              Services we offer in Marketing.
             </button>
             <button
               onClick={() => navigate("/contact")}
