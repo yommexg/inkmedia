@@ -46,7 +46,7 @@ const Banner2: React.FC = () => {
         {whatWeDoArray.map((item, index) => (
           <div
             key={item.title + index}
-            className="flex border-black border w-[300px] flex-col  px-2 py-4 items-center gap-5 bg-[#FFD700] opacity-70 hover:opacity-100"
+            className="flex border-black border w-[300px] flex-col  px-2 py-4 items-center gap-5 bg-white opacity-70 hover:opacity-100"
           >
             {item.icon}
             <h3 className="font-bold">{item.title}</h3>
