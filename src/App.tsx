@@ -7,12 +7,13 @@ import Services from "./containers/Services";
 import Portfolio from "./containers/Portfolio";
 import Blog from "./containers/Blog";
 import Contact from "./containers/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="mt-16">
+      <div className="mt-16 min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
