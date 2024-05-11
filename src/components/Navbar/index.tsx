@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
           <div className="border-r border-gray-200 hidden lg:block"></div>
           <div className="flex items-center gap-2">
             <FaPhone color="red" />
-            <a href="tel:+2348153192058" className="font-bold">
+            <a href="tel:+2349035065950" className="font-bold">
               +2349035065950
             </a>
           </div>
