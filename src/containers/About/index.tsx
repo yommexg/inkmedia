@@ -18,7 +18,7 @@ const About: React.FC = () => {
               <img
                 src={item.img}
                 alt={item.title}
-                className="rounded-lg h-[400px]"
+                className="rounded-lg h-[300px]"
               />
               <p className="text-yellow-300 italic mt-2 font-thin text-sm font-serif text-center md:text-left">
                 {item.name}

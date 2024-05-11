@@ -11,7 +11,7 @@ export const aboutArray = [
     img: kennyImg,
     name: "Kehinde Sokunle",
     title: "Chief Executive Officer and Managing Director",
-    desc: "Kehinde Sokunle is the Chief Executive Officer and Managing Director of Inkmedia Creatives. He is also an experienced digital marketer, business intelligence expert, and leader, with experience in driving growth and innovation in the fields of design, technology, and media.He is passionate about creating data-driven solutions that solve real-world problems and add value to people's lives. He brings her knowledge and experience in digital marketing, business intelligence, and leadership to the team, empowering them to deliver high-quality work that exceeds expectations.",
+    desc: "Kehinde Sokunle is the Chief Executive Officer and Managing Director of Inkmedia Creatives. He is also an experienced digital marketer, business intelligence expert, and leader, with experience in driving growth and innovation in the fields of design, technology, and media. He is passionate about creating data-driven solutions that solve real-world problems and add value to people's lives. He brings his knowledge and experience in digital marketing, business intelligence, and leadership to the team, empowering them to deliver high-quality work that exceeds expectations.",
   },
   {
     img: debbyImg,
