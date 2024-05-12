@@ -72,7 +72,7 @@ const Reviews: React.FC = () => {
         {reviews.map(({ name, text, title }, index) => (
           <SwiperSlide
             key={index}
-            className="bg-gradient-to-b from-[#FFD700] to-pink-500 p-8 rounded-lg shadow-md"
+            className="bg-gradient-to-b from-[#FFD700] to-red-900 p-8 rounded-lg shadow-md"
           >
             <div className="text-center">
               <h3 className="text-xl text-slate-200 flex flex-col items-center font-bold mb-2">
