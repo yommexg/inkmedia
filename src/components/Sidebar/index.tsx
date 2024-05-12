@@ -37,7 +37,7 @@ const Sidebar: React.FC = () => {
         initial={isMenuOpen ? menuSlideIn : menuSlideOut}
         animate={isMenuOpen ? menuSlideIn : menuSlideOut}
         variants={{ open: menuSlideIn, closed: menuSlideOut }}
-        className={`fixed bg-yellow-100 font-bold top-0 z-50 right-0 px-8 py-14  md:hidden flex flex-col gap-10 rounded-lg`}
+        className={`fixed bg-yellow-100 font-bold top-0 z-50 right-0 p-6  md:hidden flex flex-col gap-5 rounded-lg`}
       >
         <p
           onClick={toggleMenu}

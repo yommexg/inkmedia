@@ -63,7 +63,7 @@ const Reviews: React.FC = () => {
   }, [swiper]);
 
   return (
-    <div className={`px-4 py-20 bg-black`}>
+    <div className={`px-4 py-20 bg-[#1B1B1B]`}>
       <h2 className="text-3xl font-bold text-white text-center mb-6">
         REVIEWS & FEEDBACKS
       </h2>
@@ -72,7 +72,7 @@ const Reviews: React.FC = () => {
         {reviews.map(({ name, text, title }, index) => (
           <SwiperSlide
             key={index}
-            className="bg-gradient-to-b from-yellow-500 to-red-500 p-8 rounded-lg shadow-md"
+            className="bg-gradient-to-b from-[#FFD700] to-pink-500 p-8 rounded-lg shadow-md"
           >
             <div className="text-center">
               <h3 className="text-xl text-slate-200 flex flex-col items-center font-bold mb-2">

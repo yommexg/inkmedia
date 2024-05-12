@@ -3,6 +3,8 @@ import { MdPlayArrow } from "react-icons/md";
 import { SiMarketo } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 
+// const bannerImg = new URL("../../assets/banner/list.png", import.meta.url).href;
+
 const whatWeDoArray = [
   {
     icon: <SiMarketo size={30} />,
@@ -30,7 +32,10 @@ const Banner2: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-[#f1dc70] py-10 lg:px-32 h-[1200px] place-content-center md:h-[450px]">
+    <div
+      className="bg-[#FFD700] py-10 lg:px-32 h-[1200px] place-content-center md:h-[450px] bg-cover"
+      // style={{ backgroundImage: `url(${bannerImg})` }}
+    >
       <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-10">
         <h2 className="text-2xl text-center font-bold">
           Collaborate with the leading digital marketing agency in Ibadan.
@@ -46,7 +51,7 @@ const Banner2: React.FC = () => {
         {whatWeDoArray.map((item, index) => (
           <div
             key={item.title + index}
-            className="flex border-black border w-[300px] flex-col  px-2 py-4 items-center gap-5 bg-white opacity-70 hover:opacity-100 rounded-md"
+            className="flex border-black border w-[300px] flex-col  px-2 py-4 items-center gap-5 bg-white rounded-md transition-all md:hover:-translate-y-4 hover:transform hover:translate-x-3"
           >
             {item.icon}
             <h3 className="font-bold">{item.title}</h3>

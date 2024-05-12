@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-pink-500 hover:text-white transition duration-300 ease-in-out"
+                className="text-red-500 hover:text-white transition duration-300 ease-in-out"
               >
                 <link.icon size={24} />
               </a>
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           ))}
         </ul>
       </div>
-      <div className="flex flex-row items-center mt-5 text-blue-500">
+      <div className="flex flex-row items-center mt-2 text-xs text-blue-500">
         Made with <FaHeart className="mx-2" /> by Anime Code Lord
       </div>
     </footer>
