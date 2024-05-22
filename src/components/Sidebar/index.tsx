@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const Sidebar: React.FC = () => {
   const location = useLocation();
@@ -47,7 +48,10 @@ const Sidebar: React.FC = () => {
         </p>
         <Link
           to="/"
-          onClick={toggleMenu}
+          onClick={() => {
+            toggleMenu();
+            scrollToTop();
+          }}
           className={
             location.pathname === "/"
               ? "text-blue-700 underline"
@@ -58,7 +62,10 @@ const Sidebar: React.FC = () => {
         </Link>
         <Link
           to="/about"
-          onClick={toggleMenu}
+          onClick={() => {
+            toggleMenu();
+            scrollToTop();
+          }}
           className={
             location.pathname === "/about"
               ? "text-blue-700 underline"
@@ -69,7 +76,10 @@ const Sidebar: React.FC = () => {
         </Link>
         <Link
           to="/services"
-          onClick={toggleMenu}
+          onClick={() => {
+            toggleMenu();
+            scrollToTop();
+          }}
           className={
             location.pathname === "/services"
               ? "text-blue-700 underline"
@@ -80,7 +90,10 @@ const Sidebar: React.FC = () => {
         </Link>
         <Link
           to="/portfolio"
-          onClick={toggleMenu}
+          onClick={() => {
+            toggleMenu();
+            scrollToTop();
+          }}
           className={
             location.pathname === "/portfolio"
               ? "text-blue-700 underline"
@@ -91,7 +104,10 @@ const Sidebar: React.FC = () => {
         </Link>
         <Link
           to="/blog"
-          onClick={toggleMenu}
+          onClick={() => {
+            toggleMenu();
+            scrollToTop();
+          }}
           className={
             location.pathname === "/blog"
               ? "text-blue-700 underline"
@@ -102,7 +118,10 @@ const Sidebar: React.FC = () => {
         </Link>
         <Link
           to="/contact"
-          onClick={toggleMenu}
+          onClick={() => {
+            toggleMenu();
+            scrollToTop();
+          }}
           className={
             location.pathname === "/contact"
               ? "text-blue-700 underline"

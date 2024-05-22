@@ -1,5 +1,11 @@
+import ServiceBanner from "./banner";
+
 const Services: React.FC = () => {
-  return <div>Services</div>;
+  return (
+    <>
+      <ServiceBanner />
+    </>
+  );
 };
 
 export default Services;

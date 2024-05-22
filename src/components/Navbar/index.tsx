@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import Sidebar from "../Sidebar";
 import { FaPhone } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const logoImg = new URL("../../assets/logo/inksLogo.png", import.meta.url).href;
 const logoName = new URL("../../assets/logo/inksname.png", import.meta.url)
@@ -32,6 +33,7 @@ const Navbar: React.FC = () => {
               ? "text-blue-700 underline"
               : "hover:text-blue-500 hover:opacity-60"
           }
+          onClick={() => scrollToTop()}
         >
           Home
         </Link>
@@ -42,6 +44,7 @@ const Navbar: React.FC = () => {
               ? "text-blue-700 underline"
               : "hover:text-blue-500 hover:opacity-60"
           }
+          onClick={() => scrollToTop()}
         >
           About
         </Link>
@@ -52,6 +55,7 @@ const Navbar: React.FC = () => {
               ? "text-blue-700 underline"
               : "hover:text-blue-500 hover:opacity-60"
           }
+          onClick={() => scrollToTop()}
         >
           Services
         </Link>
@@ -62,6 +66,7 @@ const Navbar: React.FC = () => {
               ? "text-blue-700 underline"
               : "hover:text-blue-500 hover:opacity-60"
           }
+          onClick={() => scrollToTop()}
         >
           Portfolio
         </Link>
@@ -72,6 +77,7 @@ const Navbar: React.FC = () => {
               ? "text-blue-700 underline"
               : "hover:text-blue-500 hover:opacity-60"
           }
+          onClick={() => scrollToTop()}
         >
           Blog
         </Link>
@@ -82,6 +88,7 @@ const Navbar: React.FC = () => {
               ? "text-blue-700 underline"
               : "hover:text-blue-500 hover:opacity-60"
           }
+          onClick={() => scrollToTop()}
         >
           Contact
         </Link>
@@ -90,7 +97,7 @@ const Navbar: React.FC = () => {
           <div className="border-r border-gray-200 hidden lg:block"></div>
           <div className="flex items-center gap-3">
             <AiOutlineMail color="orange" size={23} />
-            <a href="mailto:Info@thecopywritinghub.com" className="font-bold">
+            <a href="mailto:info@thecopywritinghub.com" className="font-bold">
               Info@thecopywritinghub.com
             </a>
           </div>

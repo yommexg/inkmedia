@@ -1,4 +1,4 @@
-import { FaMessage, FaServicestack } from "react-icons/fa6";
+import { FaServicestack } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 const bannerImg = new URL(
@@ -20,27 +20,17 @@ const Banner1: React.FC = () => {
             Ibadan's Leading Results-Oriented Digital Marketing Agency
           </h2>
           <p className="text-white text-center text-lg md:text-3xl">
-            At Inkmedia, we provide the quickest and most budget-friendly path
-            to expanding your business through effective digital marketing
-            strategies. We're more than just a digital marketing agency; we're
-            your strategic ally, committed to championing your brand."
+            Grow your brand faster with proven media and online marketing
+            solutions
           </p>
-          <div className="flex flex-col gap-5 md:flex-row md:gap-10">
+          <div>
             <button
               onClick={() => navigate("/services")}
-              className="flex items-center gap-2 bg-red-700 rounded-md p-4 font-serif font-bold cursor-pointer z-10 text-white"
+              className="flex items-center justify-center gap-2 bg-white rounded-md p-3 text-lg font-serif cursor-pointer z-10 text-red-600"
               type="button"
             >
-              <FaServicestack />
-              Services we offer in Marketing.
-            </button>
-            <button
-              onClick={() => navigate("/contact")}
-              className="flex items-center justify-center gap-4 bg-white rounded-md p-4 text-lg font-serif font-bold cursor-pointer z-10 text-black"
-              type="button"
-            >
-              <FaMessage color="orange" />
-              Send us a Message
+              <FaServicestack color="orange" />
+              Get Started Now
             </button>
           </div>
         </div>
