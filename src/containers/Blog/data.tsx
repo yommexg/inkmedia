@@ -53,7 +53,7 @@ const BlogData: React.FC = () => {
           <img
             src={post.linkImage}
             alt={post.title}
-            className="w-[250px] md:w-[300px]"
+            className="w-[300px] md:w-[400px]"
           />
           <div className="w-[250px] md:w-[300px] px-6 mt-4">
             <div className="flex gap-2 items-center">
