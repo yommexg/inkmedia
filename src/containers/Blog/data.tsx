@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { FaCalendar } from "react-icons/fa";
+import truncateText from "../../utils/truncateText";
 
 interface BlogPost {
   title: string;
@@ -45,7 +47,12 @@ const blogData: BlogPost[] = [
     linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
   },
 ];
+
 const BlogData: React.FC = () => {
+  const [showFullDesc, setShowFullDesc] = useState(
+    new Array(blogData.length).fill(false)
+  );
+
   return (
     <div className="flex flex-col my-2 items-center justify-center md:flex-row md:flex-wrap gap-5 md:gap-10">
       {blogData.map((post, index) => (
@@ -69,7 +76,21 @@ const BlogData: React.FC = () => {
             <h2 className="text-[#FDD700] font-semibold text-lg my-4 capitalize">
               {post.title}
             </h2>
-            <p className="text-white text-sm mb-4">{post.desc}</p>
+            <p className="text-white text-sm mb-4">
+              {truncateText(post.desc, 10)}
+              {!showFullDesc[index] && (
+                <span
+                  className="text-blue-500 ml-1 cursor-pointer hover:opacity-65"
+                  onClick={() => {
+                    setShowFullDesc((prev) => [...prev, !prev[index]]);
+                    console.log(showFullDesc[index]);
+                  }}
+                >
+                  Read More
+                </span>
+              )}
+              {showFullDesc[index] && <span>{post.desc}</span>}
+            </p>
           </div>
         </div>
       ))}
