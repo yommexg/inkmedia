@@ -1,5 +1,6 @@
 import { FaServicestack } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const bannerImg = new URL(
   "../../assets/banner/digitalBanner.jpg",
@@ -23,7 +24,10 @@ const Banner1: React.FC = () => {
           <p className="text-white text-center text-lg md:text-3xl"></p>
           <div>
             <button
-              onClick={() => navigate("/services")}
+              onClick={() => {
+                navigate("/services");
+                scrollToTop();
+              }}
               className="flex items-center justify-center gap-2 bg-white rounded-md p-3 text-lg font-serif cursor-pointer z-10 text-red-600"
               type="button"
             >

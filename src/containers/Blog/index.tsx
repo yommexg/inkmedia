@@ -1,5 +1,13 @@
+import BlogBanner from "./banner";
+import BlogData from "./data";
+
 const Blog: React.FC = () => {
-  return <div>Blog</div>;
+  return (
+    <>
+      <BlogBanner />
+      <BlogData />
+    </>
+  );
 };
 
 export default Blog;

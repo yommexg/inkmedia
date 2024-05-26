@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
         >
           Services
         </Link>
-        <Link
+        {/* <Link
           to="/portfolio"
           className={
             location.pathname === "/portfolio"
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
           onClick={() => scrollToTop()}
         >
           Portfolio
-        </Link>
+        </Link> */}
         <Link
           to="/blog"
           className={

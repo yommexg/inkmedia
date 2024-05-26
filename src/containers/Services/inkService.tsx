@@ -2,7 +2,7 @@ import { serviceArray } from "./data";
 
 const InkService: React.FC = () => {
   return (
-    <div className="my-4">
+    <div className="my-2">
       <div className="flex flex-col items-center mx-5 gap-4 bg-yellow-50 md:mx-10 shadow-lg py-6 rounded-lg">
         <img
           src={serviceArray[0].icon}
@@ -20,7 +20,7 @@ const InkService: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col mt-8 gap-4 md:flex-row justify-center md:flex-wrap">
+      <div className="flex flex-col mt-4 gap-4 md:flex-row justify-center md:flex-wrap">
         {serviceArray.slice(1).map((item) => (
           <div
             key={item.title}

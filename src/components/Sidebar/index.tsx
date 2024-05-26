@@ -88,7 +88,7 @@ const Sidebar: React.FC = () => {
         >
           Services
         </Link>
-        <Link
+        {/* <Link
           to="/portfolio"
           onClick={() => {
             toggleMenu();
@@ -101,7 +101,7 @@ const Sidebar: React.FC = () => {
           }
         >
           Portfolio
-        </Link>
+        </Link> */}
         <Link
           to="/blog"
           onClick={() => {
