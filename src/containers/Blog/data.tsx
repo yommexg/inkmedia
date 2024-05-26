@@ -49,7 +49,10 @@ const BlogData: React.FC = () => {
   return (
     <div className="flex flex-col my-2 items-center justify-center md:flex-row md:flex-wrap gap-5 md:gap-10">
       {blogData.map((post, index) => (
-        <div key={post.datePosted + index} className="bg-[#1B1B1B]">
+        <div
+          key={post.datePosted + index}
+          className="bg-[#1B1B1B] rounded-b-xl"
+        >
           <img
             src={post.linkImage}
             alt={post.title}
