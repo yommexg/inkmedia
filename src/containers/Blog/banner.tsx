@@ -8,7 +8,7 @@ const BlogBanner: React.FC = () => {
     >
       <div className="absolute inset-0 bg-[#1B1B1B]  md:h-[180px]  lg:h-[240px] opacity-70 flex flex-col items-center justify-center lg:px-20 h-[120px]">
         <h2 className="text-white text-2xl md:text-4xl font-semibold">
-          Weclome to Inksmedia Blog
+          Weclome to the Inksmedia Blog
         </h2>
         <p className="text-xs md:text-sm mt-2 text-yellow-300 max-w-[280px] md:max-w-[400px] text-center">
           Spark your curiosity every day with surprising ideas and interesting
