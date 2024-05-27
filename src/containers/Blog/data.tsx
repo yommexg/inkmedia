@@ -21,28 +21,28 @@ const blogData: BlogPost[] = [
   {
     title: "Exploring the Beauty of Nigerian Landscapes",
     desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
-    datePosted: "May 26, 2024",
+    datePosted: "May 27, 2024",
     category: "Travel",
     linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
   },
   {
     title: "Exploring the Beauty of Nigerian Landscapes",
     desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
-    datePosted: "May 26, 2024",
+    datePosted: "May 28, 2024",
     category: "Travel",
     linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
   },
   {
     title: "Exploring the Beauty of Nigerian Landscapes",
     desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
-    datePosted: "May 26, 2024",
+    datePosted: "May 29, 2024",
     category: "Travel",
     linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
   },
   {
     title: "Exploring the Beauty of Nigerian Landscapes",
     desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
-    datePosted: "May 26, 2024",
+    datePosted: "May 30, 2024",
     category: "Travel",
     linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
   },
@@ -53,6 +53,12 @@ const BlogData: React.FC = () => {
     new Array(blogData.length).fill(false)
   );
 
+  const sortedBlogData = [...blogData].sort((a, b) => {
+    const dateA = new Date(a.datePosted);
+    const dateB = new Date(b.datePosted);
+    return dateB.getTime() - dateA.getTime();
+  });
+
   return (
     <div className="flex flex-col my-2 items-center justify-center md:flex-row md:flex-wrap gap-5 md:gap-10">
       {blogData.length === 0 && (
@@ -60,7 +66,7 @@ const BlogData: React.FC = () => {
           No Blog Posts Availiable
         </p>
       )}
-      {blogData.map((post, index) => (
+      {sortedBlogData.map((post, index) => (
         <div
           key={post.datePosted + index}
           className="bg-[#1B1B1B] rounded-b-xl"
