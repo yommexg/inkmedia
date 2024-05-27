@@ -112,7 +112,7 @@ const BlogData: React.FC = () => {
               {truncateText(post.desc, 10)}
               {!showFullDesc[index] && (
                 <span
-                  className="text-blue-500 ml-1 cursor-pointer hover:opacity-65"
+                  className="text-red-500 ml-1 cursor-pointer hover:opacity-65"
                   onClick={() => {
                     setShowFullDesc((prev) => {
                       const newState = [...prev];
@@ -124,7 +124,23 @@ const BlogData: React.FC = () => {
                   Read More
                 </span>
               )}
-              {showFullDesc[index] && <span>{post.desc}</span>}
+              {showFullDesc[index] && (
+                <span>
+                  {post.desc}{" "}
+                  <span
+                    className="text-red-500 ml-1 cursor-pointer hover:opacity-65"
+                    onClick={() => {
+                      setShowFullDesc((prev) => {
+                        const newState = [...prev];
+                        newState[index] = !newState[index];
+                        return newState;
+                      });
+                    }}
+                  >
+                    Hide Text
+                  </span>
+                </span>
+              )}
             </p>
           </div>
         </div>
