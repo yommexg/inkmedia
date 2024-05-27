@@ -21,6 +21,27 @@ const blogData: BlogPost[] = [
   {
     title: "Exploring the Beauty of Nigerian Landscapes",
     desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
+    datePosted: "May 26, 2024",
+    category: "Travel",
+    linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
+  },
+  {
+    title: "Exploring the Beauty of Nigerian Landscapes",
+    desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
+    datePosted: "May 26, 2024",
+    category: "Travel",
+    linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
+  },
+  {
+    title: "Exploring the Beauty of Nigerian Landscapes",
+    desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
+    datePosted: "May 26, 2024",
+    category: "Travel",
+    linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
+  },
+  {
+    title: "Exploring the Beauty of Nigerian Landscapes",
+    desc: "Nigeria boasts a diverse range of breathtaking landscapes, from the lush rainforests of the south to the sweeping savannahs of the north. This blog delves into the must-see natural wonders of this vibrant country.",
     datePosted: "May 27, 2024",
     category: "Travel",
     linkImage: "https://picsum.photos/id/1076/400/300?grayscale&blur=2",
@@ -84,10 +105,10 @@ const BlogData: React.FC = () => {
               <div className="h-[10px] bg-white border-l border-white" />
               <p className="text-[10px] text-white">{post.category}</p>
             </div>
-            <h2 className="text-[#FDD700] font-semibold text-lg my-4 capitalize">
+            <h2 className="text-[#FDD700] font-semibold text-lg md:text-xl my-4 capitalize">
               {post.title}
             </h2>
-            <p className="text-white text-sm mb-4">
+            <p className="text-white text-sm md:text-base mb-4">
               {truncateText(post.desc, 10)}
               {!showFullDesc[index] && (
                 <span

@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import Sidebar from "../Sidebar";
-import { FaPhone } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { scrollToTop } from "../../utils/scrollToTop";
 
@@ -98,16 +97,16 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-3">
             <AiOutlineMail color="orange" size={23} />
             <a href="mailto:info@thecopywritinghub.com" className="font-bold">
-              Info@thecopywritinghub.com
+              info@thecopywritinghub.com
             </a>
           </div>
           <div className="border-r border-gray-200 hidden lg:block"></div>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <FaPhone color="red" />
             <a href="tel:+2349035065950" className="font-bold">
               +2349035065950
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
