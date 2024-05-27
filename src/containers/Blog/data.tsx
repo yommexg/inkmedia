@@ -55,6 +55,11 @@ const BlogData: React.FC = () => {
 
   return (
     <div className="flex flex-col my-2 items-center justify-center md:flex-row md:flex-wrap gap-5 md:gap-10">
+      {blogData.length === 0 && (
+        <p className="py-40 font-bold text-xl text-red-500">
+          No Blog Posts Availiable
+        </p>
+      )}
       {blogData.map((post, index) => (
         <div
           key={post.datePosted + index}
@@ -82,8 +87,11 @@ const BlogData: React.FC = () => {
                 <span
                   className="text-blue-500 ml-1 cursor-pointer hover:opacity-65"
                   onClick={() => {
-                    setShowFullDesc((prev) => [...prev, !prev[index]]);
-                    console.log(showFullDesc[index]);
+                    setShowFullDesc((prev) => {
+                      const newState = [...prev];
+                      newState[index] = !newState[index];
+                      return newState;
+                    });
                   }}
                 >
                   Read More
