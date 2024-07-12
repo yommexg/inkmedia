@@ -23,7 +23,7 @@ export const aboutArray = [
   },
   {
     img: atmImg,
-    name: " Tomiloba Igbokwe",
+    name: " Tomiloba Agboola",
     title: "Executive Director",
     desc: "Agboola Tomiloba is the Executive Director at Inkmedia Creatives.  He is also a serial entrepreneur and a sought-after architect, with over 10 years of experience in launching and leading successful ventures in the fields of design, technology, and media. He is the executive director of Inkmedia, a creative agency that specializes in producing engaging and impactful videos and graphics for various clients.",
   },
