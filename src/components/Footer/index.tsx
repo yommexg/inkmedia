@@ -1,6 +1,5 @@
 import React from "react";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
-import { FaHeart } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const socialLinks = [
