@@ -29,9 +29,7 @@ const Footer: React.FC = () => {
           ))}
         </ul>
       </div>
-      <div className="flex flex-row items-center mt-2 text-xs text-blue-500">
-        Made with <FaHeart className="mx-2" /> by Anime Code Lord
-      </div>
+    
     </footer>
   );
 };
