@@ -136,7 +136,7 @@ const BlogData: React.FC = () => {
                     });
                   }}
                 >
-                  Hide Text
+                  Show Less
                 </p>
               )}
             </p>
